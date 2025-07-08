@@ -20,6 +20,11 @@ brew tap FabioPinheiro/fmgp
 brew install cardano-prism
 ```
 
+## How to upgrade to new versions
+
+```bash
+brew upgrade cardano-prism
+```
 
 ## cardano-prism-cli
 
