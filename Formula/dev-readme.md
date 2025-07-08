@@ -2,6 +2,8 @@
 
 ➜  homebrew-fmgp git:(main) ✗ shasum -a 256 ../scala-did/did-method-prism/jvm/target/scala-3.3.6/cardano-prism.jar
 e0a4d75898f8df0c86032fb1e08bb9ac83c31c6a100289989ef137b41e59f6d3  ../scala-did/did-method-prism/jvm/target/scala-3.3.6/cardano-prism-0.1.0.jar
+b10b53e4c131c90ddd71524b800f3679d5c2524c0edce31881795fc36990ed02  ../scala-did/did-method-prism/jvm/target/scala-3.3.6/cardano-prism-0.2.0.jar
+```
 
 ### link
 

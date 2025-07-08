@@ -32,7 +32,7 @@ brew install cardano-prism
                                             /_/                            
 
 
-cardano-prism 0.1.0 -- cli for the PRISM VDR protocol
+cardano-prism 0.2.0 -- cli for the PRISM VDR protocol
 
 USAGE
 
@@ -40,12 +40,16 @@ USAGE
 
 COMMANDS
 
-  - version                                               
-  - indexer [--blockfrost-token <text>] <work-directory>  
-  - did                                                   
-  - did create                                            
-  - did update <DID>                                      
-  - did deactivate <DID>                                  
-  - did resolve <DID>                                     Resolve DID PRISM (from external storage)
-  - did resolve <DID> <work-directory>                    Resolve DID PRISM (from indexer FS storage)
+  - version                                                                                          
+  - mnemonic                                                                                         
+  - mnemonic new                                                                                     
+  - mnemonic seed [--mnemonic <text> [--mnemonic-passphrase <text>]]                                 
+  - key [--mnemonic <text> [--mnemonic-passphrase <text>]] --depth <integer> --childIndex <integer>  Make a private Secp256k1 key
+  - indexer [--blockfrost-token <text>] <work-directory>                                             
+  - did                                                                                              
+  - did create                                                                                       
+  - did update <DID>                                                                                 
+  - did deactivate <DID>                                                                             
+  - did resolve [--network mainnet | testnet | preprod | preview] <DID>                              Resolve DID PRISM (from external storage)
+  - did resolve [--network mainnet | testnet | preprod | preview] <DID> <work-directory>             Resolve DID PRISM (from indexer FS storage)
 ```
