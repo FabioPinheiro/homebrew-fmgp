@@ -37,7 +37,7 @@ brew upgrade cardano-prism
                                             /_/                            
 
 
-cardano-prism 0.2.0 -- cli for the PRISM VDR protocol
+cardano-prism 0.3.0 -- cli for the PRISM VDR protocol
 
 USAGE
 
@@ -45,16 +45,22 @@ USAGE
 
 COMMANDS
 
-  - version                                                                                          
-  - mnemonic                                                                                         
-  - mnemonic new                                                                                     
-  - mnemonic seed [--mnemonic <text> [--mnemonic-passphrase <text>]]                                 
-  - key [--mnemonic <text> [--mnemonic-passphrase <text>]] --depth <integer> --childIndex <integer>  Make a private Secp256k1 key
-  - indexer [--blockfrost-token <text>] <work-directory>                                             
-  - did                                                                                              
-  - did create                                                                                       
-  - did update <DID>                                                                                 
-  - did deactivate <DID>                                                                             
-  - did resolve [--network mainnet | testnet | preprod | preview] <DID>                              Resolve DID PRISM (from external storage)
-  - did resolve [--network mainnet | testnet | preprod | preview] <DID> <work-directory>             Resolve DID PRISM (from indexer FS storage)
+  - indexer [--token <text>] <work-directory>                                                                                                                            
+  - version                                                                                                                                                              
+  - config-file [--create]                                                                                                                                               
+  - mnemonic                                                                                                                                                             
+  - mnemonic new [-s] [--wallet-type ssi | cardano]                                                                                                                      
+  - mnemonic seed [-s] [--mnemonic <text>]                                                                                                                               
+  - mnemonic address [-s] [[--mnemonic <text> [--mnemonic-passphrase <text>]]|--wallet-type ssi | cardano] [--network mainnet | testnet | preprod | preview]             
+  - key [-s] [--mnemonic <text> [--mnemonic-passphrase <text>]] [--derivation-path <text>] [--label <text>]                                                              Make a private Secp256k1 key
+  - did                                                                                                                                                                  
+  - did create [-s] [--master <text>] [--master-raw <text>] [[--vdr <text>]] [--vdr-raw <text>]                                                                          
+  - did update <DID>                                                                                                                                                     
+  - did deactivate <DID>                                                                                                                                                 
+  - did resolve [--network mainnet | testnet | preprod | preview] <DID>                                                                                                  Resolve DID PRISM (from external storage)
+  - did resolve [--network mainnet | testnet | preprod | preview] <DID> <work-directory>                                                                                 Resolve DID PRISM (from indexer FS storage)
+  - bf                                                                                                                                                                   Blockfrost API
+  - bf token [-s] <network> mainnet | preprod | preview <token>                                                                                                          
+  - bf address [-s] [[--mnemonic <text> [--mnemonic-passphrase <text>]]|--wallet-type ssi | cardano] [--network mainnet | testnet | preprod | preview] [--token <text>]  
+  - bf submit [-s] --network mainnet | preprod | preview <event>...                                                                                                      
 ```
